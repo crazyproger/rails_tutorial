@@ -44,3 +44,5 @@ end
 group :test do
   gem 'capybara', '1.1.2'
 end
+
+gem 'bootstrap-sass', '2.0.0'
