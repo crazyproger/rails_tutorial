@@ -46,4 +46,5 @@ group :test do
 end
 
 gem 'bootstrap-sass', '2.0.0'
+gem 'bcrypt-ruby', '3.0.1'
 gem 'annotate', '~> 2.4.1.beta1', group: :development
