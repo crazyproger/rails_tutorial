@@ -12,8 +12,8 @@
 require 'spec_helper'
 
 describe User do
-  before { @user=User.new(name: "Example User", email: "test@email.com", password: "12345",
-                          password_confirmation: "12345") }
+  before { @user=User.new(name: "Example User", email: "test@email.com", password: "123456",
+                          password_confirmation: "123456") }
   subject { @user }
 
   it { should respond_to(:name) }
@@ -31,7 +31,7 @@ describe User do
     let(:found_user) { User.find_by_email(@user.email) }
 
     describe "with valid password" do
-      it { should found_user.authenticate(@user.password) }
+      it { should == found_user.authenticate(@user.password) }
     end
 
     describe "with wrong password" do
